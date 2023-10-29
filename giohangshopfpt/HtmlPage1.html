@@ -1,0 +1,369 @@
+﻿
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <!-- menu -->
+        <!-- LOGO -->
+        <div class="menu " id="menu">
+            <div class="menu-width">
+                <div class="container-menu">
+                    <div class="img-search">
+                        <div class="container-img-search">
+                            <div class="container-img">
+                                <div class="edit-img">
+                                    <img class="Logo" src="/images/logo-sidebar-white.svg">
+                                </div>
+                            </div>
+
+                            <!-- SEARCH -->
+                            <div class="search ">
+                                <div class="hidden" style="width :500px;">
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn-search">
+                                                <span size="20" class="estore-icon"><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9414 1.93125C5.98269 1.93125 1.94336 5.97057 1.94336 10.9293C1.94336 15.888 5.98269 19.9352 10.9414 19.9352C13.0594 19.9352 15.0074 19.193 16.5469 17.9606L20.2949 21.7066C20.4841 21.888 20.7367 21.988 20.9987 21.9853C21.2607 21.9826 21.5112 21.8775 21.6966 21.6923C21.882 21.5072 21.9875 21.2569 21.9906 20.9949C21.9936 20.7329 21.8939 20.4801 21.7129 20.2907L17.9648 16.5427C19.1983 15.0008 19.9414 13.0498 19.9414 10.9293C19.9414 5.97057 15.9001 1.93125 10.9414 1.93125ZM10.9414 3.93128C14.8192 3.93128 17.9395 7.05148 17.9395 10.9293C17.9395 14.8071 14.8192 17.9352 10.9414 17.9352C7.06357 17.9352 3.94336 14.8071 3.94336 10.9293C3.94336 7.05148 7.06357 3.93128 10.9414 3.93128Z" fill="white"></path></svg></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM-ICON -->
+                    <div class="item_icon">
+                        <div class="text-item">
+                            <div class="cart-empty_txt-center">
+                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4V15.25C24 17.3211 25.6789 19 27.75 19H40V40C40 41.6569 38.6569 43 37 43H11C9.34315 43 8 41.6569 8 40V7C8 5.34315 9.34315 4 11 4H24ZM26.5 4.46429V15.25C26.5 15.9404 27.0596 16.5 27.75 16.5H39.4615L26.5 4.46429Z" fill="currentColor"></path></svg>
+                            </div>
+                            <span>Thông tin hay</span>
+                        </div>
+                        <div class="text-item">
+                            <div class="cart-empty_txt-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3158 1.50045C19.1011 1.49977 16.8864 1.49977 14.6717 1.50113C14.5613 1.50113 14.4516 1.51067 14.3105 1.5168C14.3105 1.64832 14.3105 1.7594 14.3105 1.86979C14.3105 2.58531 14.318 3.30083 14.3085 4.01635C14.2935 5.16731 13.4935 6.02117 12.3439 6.09408C11.8233 6.12679 11.2999 6.10703 10.7772 6.10908C10.4277 6.11044 10.0788 6.10908 9.68965 6.10908C9.68965 6.26922 9.68965 6.39119 9.68965 6.51249C9.68965 7.79566 9.69783 9.0795 9.68283 10.3627C9.67943 10.6298 9.7612 10.7538 10.0065 10.8683C12.7637 12.159 14.2867 15.2364 13.6359 18.2204C13.5119 18.7894 13.2904 19.338 13.1064 19.92C13.1882 19.9268 13.2856 19.9411 13.3824 19.9411C16.04 19.9425 18.6977 19.9445 21.3547 19.9404C22.1063 19.939 22.4988 19.5329 22.4995 18.771C22.5002 13.4108 22.5002 8.04984 22.4995 2.68957C22.5002 1.88547 22.1158 1.50045 21.3158 1.50045ZM17.4248 5.23273C17.5249 5.18094 17.5978 5.03239 17.6353 4.91382C17.6714 4.80001 17.6387 4.66577 17.6483 4.54175C17.6714 4.24804 17.8418 4.08109 18.1287 4.06814C18.4197 4.05451 18.665 4.23101 18.6391 4.4995C18.59 5.01195 18.8449 5.23546 19.2388 5.47669C19.7069 5.76358 19.9127 6.25627 19.9393 6.84913C19.942 7.13465 19.7621 7.3534 19.4739 7.37589C19.1774 7.39905 18.9894 7.23551 18.9233 6.89887C18.8135 6.34077 18.5682 6.10158 18.1191 6.11657C17.7178 6.1302 17.4098 6.42731 17.3852 6.82323C17.3607 7.22733 17.6476 7.57555 18.0524 7.63552C18.2759 7.66823 18.5076 7.6764 18.7209 7.7425C19.4234 7.96125 19.8991 8.58477 19.9325 9.34663C19.9665 10.1126 19.6245 10.6898 18.9423 11.0284C18.7175 11.1402 18.6384 11.2588 18.665 11.4884C18.6752 11.5777 18.6718 11.6704 18.6609 11.7603C18.6255 12.0533 18.4108 12.2571 18.1478 12.2571C17.8691 12.2564 17.6626 12.0404 17.6442 11.7242C17.638 11.6227 17.6305 11.5184 17.6442 11.4182C17.6701 11.2281 17.5842 11.1395 17.4166 11.0618C16.7753 10.7668 16.4189 10.2584 16.3631 9.55379C16.3351 9.20353 16.515 8.96979 16.804 8.93436C17.1106 8.89756 17.328 9.09518 17.3818 9.46043C17.452 9.93472 17.7798 10.2339 18.1948 10.2032C18.6002 10.1732 18.9096 9.84 18.9089 9.43317C18.9083 8.99705 18.6064 8.70198 18.1232 8.66518C17.189 8.59431 16.5368 8.04098 16.3787 7.18576C16.2336 6.38642 16.6431 5.63751 17.4248 5.23273ZM15.9644 13.7897C17.4268 13.7856 18.8892 13.7856 20.3516 13.7903C20.7373 13.7917 20.9744 14.0091 20.9635 14.3219C20.9526 14.6265 20.7325 14.8071 20.3509 14.8084C19.6142 14.8125 18.8769 14.8098 18.1403 14.8098C17.4145 14.8098 16.6895 14.8125 15.9637 14.8091C15.5576 14.8071 15.3368 14.6244 15.3375 14.3035C15.3382 13.9846 15.563 13.791 15.9644 13.7897ZM20.357 17.3788C18.8831 17.3816 17.4091 17.3823 15.9344 17.3788C15.5637 17.3782 15.3402 17.1805 15.3368 16.8732C15.3334 16.5632 15.5555 16.3621 15.9235 16.3594C16.6718 16.3553 17.42 16.358 18.1689 16.358C18.8946 16.358 19.6204 16.356 20.3461 16.3587C20.7366 16.3601 20.9724 16.5632 20.9649 16.8787C20.9574 17.1805 20.7257 17.3782 20.357 17.3788Z" fill="white"></path><path d="M7.11991 11.2376C4.01046 11.2438 1.49592 13.7679 1.5 16.8787C1.50409 19.9827 4.03363 22.502 7.14239 22.4986C10.2464 22.4958 12.7643 19.967 12.7609 16.8555C12.7582 13.7488 10.2307 11.2315 7.11991 11.2376ZM9.8491 15.5778C8.77923 16.6749 7.7039 17.7673 6.62176 18.8535C6.38735 19.0886 6.13657 19.0866 5.8967 18.8555C5.40606 18.3826 4.92496 17.9002 4.45204 17.4102C4.22852 17.1785 4.24215 16.8855 4.45272 16.6831C4.65852 16.4855 4.94813 16.4882 5.18118 16.7172C5.52872 17.0579 5.86059 17.4136 6.21971 17.7829C6.65652 17.3448 7.05585 16.9434 7.45586 16.5427C8.00987 15.9887 8.5598 15.4306 9.12132 14.8841C9.35437 14.6578 9.64534 14.6674 9.84773 14.8752C10.0467 15.0796 10.0638 15.3584 9.8491 15.5778Z" fill="white"></path><path d="M12.4836 5.03784C12.857 5.01195 13.178 4.73323 13.21 4.36934C13.27 3.6838 13.227 2.99009 13.227 2.32159C12.3378 3.21497 11.4369 4.12061 10.5115 5.05011C11.1806 5.05011 11.8348 5.08282 12.4836 5.03784Z" fill="white"></path></svg>
+                            </div>
+                            <span>Thanh toán & tiện ích</span>
+                        </div>
+                        <div class="text-item">
+                            <div class="cart-empty_txt-center">
+                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C18.4772 4 14 8.47715 14 14C14 19.5228 18.4772 24 24 24C29.5228 24 34 19.5228 34 14C34 8.47715 29.5228 4 24 4ZM12.2499 28C9.90326 28 8.00002 29.9013 8 32.2489L8 33C8 36.7555 9.94167 39.5669 12.9202 41.3802C15.8491 43.1633 19.7861 44 24 44C28.2139 44 32.1509 43.1633 35.0798 41.3802C38.0583 39.5669 40 36.7555 40 33L40 32.2487C40 29.9011 38.0967 28 35.7502 28H12.2499Z" fill="currentColor"></path></svg>
+                            </div>
+                            <span>Đăng nhập</span>
+                        </div>
+                        <div class="text-item">
+                            <div class="cart-empty_txt-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.00024 20.1667C5.00024 19.5446 5.23359 19.0002 5.70029 18.5335C6.16699 18.0668 6.71139 17.8335 7.3335 17.8335C7.98668 17.8335 8.53885 18.0668 8.99001 18.5335C9.44117 19.0002 9.66675 19.5446 9.66675 20.1667C9.66675 20.8199 9.44117 21.3721 8.99001 21.8233C8.53885 22.2744 7.98668 22.5 7.3335 22.5C6.71139 22.5 6.16699 22.2744 5.70029 21.8233C5.23359 21.3721 5.00024 20.8199 5.00024 20.1667ZM16.6665 20.1667C16.6665 19.5446 16.8999 19.0002 17.3666 18.5335C17.8333 18.0668 18.3777 17.8335 18.9998 17.8335C19.6529 17.8335 20.2051 18.0668 20.6563 18.5335C21.1074 19.0002 21.333 19.5446 21.333 20.1667C21.333 20.8199 21.1074 21.3721 20.6563 21.8233C20.2051 22.2744 19.6529 22.5 18.9998 22.5C18.3777 22.5 17.8333 22.2744 17.3666 21.8233C16.8999 21.3721 16.6665 20.8199 16.6665 20.1667ZM9.15318 14.6603C8.59324 14.8157 8.32881 14.9947 8.35989 15.1972C8.39097 15.3997 8.73311 15.5007 9.38629 15.5002H22.5V17.2733C22.5 17.5846 22.3444 17.7403 22.0331 17.7403H6.77331C6.46202 17.7403 6.30637 17.5846 6.30637 17.2733V15.5002L6.07326 14.4272L3.78663 3.83398H1.5V1.96694C1.5 1.65565 1.65565 1.5 1.96694 1.5H5.60705C5.91834 1.5 6.07399 1.65565 6.07399 1.96694V3.97384H22.5007V10.3675C22.5007 10.7099 22.3606 10.9122 22.0804 10.9743L9.15318 14.6603Z" fill="white"></path></svg>
+                            </div>
+                            <span>Giỏ hàng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="bg-layer-gray main">
+        <div class="content">
+            <div class="container-content">
+
+                <!-- Category -->
+                <div id="category" class="category ">
+                    <div>
+                        <div class="container-category">
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8571 1.00636L5.14286 1C4.51429 1 4 1.57273 4 2.27273L4 13.7273C4 14.4273 4.51429 15 5.14286 15L10.8571 15C11.4857 15 12 14.4273 12 13.7273L12 2.27273C12 1.57273 11.4857 1.00636 10.8571 1.00636ZM11.0262 12.9961L5.03042 12.9961L5.03042 2.57931L11.0262 2.57931L11.0262 12.9961Z" fill="#E1E4E6"></path></svg>                                        Điện thoại
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.2254 11.783V11.283C4.1219 11.283 3.9616 11.2125 3.80224 10.997C3.64696 10.7871 3.55704 10.5193 3.55704 10.302V4.21699C3.55704 4.03011 3.62221 3.86594 3.7257 3.74202V4.2173V10.3023V10.8023H4.2257H13.5526H14.0526V10.3023V4.2173V3.74275C14.1557 3.86659 14.2206 4.03048 14.2206 4.21699V10.302C14.2206 10.5193 14.1307 10.7871 13.9754 10.997C13.816 11.2125 13.6558 11.283 13.5522 11.283V11.783V12.283H15.3887V12.5H2.38867V12.283H4.2254V11.783ZM13.5522 3.5C13.7326 3.5 13.9055 3.5813 14.0303 3.7173H13.5526H4.2257H3.74735C3.8721 3.5813 4.04504 3.5 4.2254 3.5H13.5522Z" fill="#E1E4E6" stroke="#E1E4E6"></path></svg>LAPTOP
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5026 3H3.05206C2.35103 3 1.77734 3.59491 1.77734 4.32777V11.6722C1.77734 12.4051 2.35103 13 3.05206 13H14.5026C15.2037 13 15.7667 12.4051 15.7667 11.6722L15.7773 4.32777C15.7773 3.59491 15.2037 3 14.5026 3ZM13.7773 12H3.77734V4H13.7773V12Z" fill="#E1E4E6"></path></svg>MÁY
+                                        TÍNH BẢNG
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+
+                                        <svg width="17" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6192 0.5C16.6751 0.5 16.7309 0.5 16.7899 0.5C16.9269 2.19253 16.2809 3.45719 15.4958 4.37301C14.7254 5.28251 13.6704 6.1646 11.9642 6.03076C11.8504 4.36247 12.4975 3.19161 13.2816 2.27789C14.0087 1.42636 15.3419 0.668621 16.6192 0.5Z" fill="#E1E4E6"></path><path d="M21.7841 18.1166C21.7841 18.1335 21.7841 18.1482 21.7841 18.1641C21.3046 19.6163 20.6206 20.8609 19.7859 22.016C19.024 23.0646 18.0903 24.4757 16.423 24.4757C14.9824 24.4757 14.0254 23.5494 12.549 23.5241C10.9871 23.4988 10.1282 24.2987 8.70019 24.5C8.53684 24.5 8.37348 24.5 8.21329 24.5C7.16468 24.3482 6.31842 23.5178 5.7019 22.7695C3.88396 20.5585 2.47914 17.7025 2.21777 14.0476C2.21777 13.6893 2.21777 13.332 2.21777 12.9737C2.32843 10.358 3.59941 8.23124 5.28878 7.20054C6.18036 6.65253 7.40602 6.18566 8.7708 6.39432C9.3557 6.48496 9.95325 6.6852 10.477 6.88333C10.9734 7.07408 11.5941 7.41237 12.1822 7.39446C12.5806 7.38286 12.9768 7.17525 13.3784 7.02876C14.5545 6.60405 15.7074 6.11715 17.2271 6.34585C19.0535 6.62196 20.3498 7.43345 21.1507 8.68546C19.6057 9.66873 18.3843 11.1505 18.593 13.6808C18.7784 15.9794 20.1148 17.3241 21.7841 18.1166Z" fill="#E1E4E6"></path></svg>APPLE
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.3094 11.4369H6.24814C6.11285 11.4369 6.00283 11.3232 6.00283 11.1834V5.31597C6.00283 5.17622 6.11292 5.06257 6.24814 5.06257H15.3094C15.4447 5.06257 15.5547 5.17629 15.5547 5.31597V11.1834C15.5548 11.3232 15.4447 11.4369 15.3094 11.4369ZM12.7984 13.2888H11.8804V12.1481H9.67724V13.2888H8.7592C8.56904 13.2888 8.41496 13.448 8.41496 13.6444C8.41496 13.8408 8.56904 14 8.7592 14H10.0215H11.5362H12.7984C12.9885 14 13.1426 13.8408 13.1426 13.6444C13.1426 13.448 12.9885 13.2888 12.7984 13.2888ZM7.05188 4.35129H6.24814C6.19788 4.35129 6.14892 4.35655 6.10073 4.36452C6.07243 4.35677 6.04331 4.35129 6.01267 4.35129H2.5939C2.40374 4.35129 2.24965 4.51046 2.24965 4.70689C2.24965 4.90333 2.40374 5.0625 2.5939 5.0625H5.34814C5.32673 5.14343 5.31433 5.22814 5.31433 5.3159V5.97796H2.5939C2.40374 5.97796 2.24965 6.13713 2.24965 6.33356C2.24965 6.53 2.40374 6.68916 2.5939 6.68916H5.31433V7.6047H2.5939C2.40374 7.6047 2.24965 7.76387 2.24965 7.9603C2.24965 8.15674 2.40374 8.3159 2.5939 8.3159H5.31433V11.1833C5.31433 11.7153 5.73328 12.148 6.24814 12.148H7.05188V13.6443C7.05188 13.8408 6.8978 13.9999 6.70764 13.9999H1.89893C1.70877 13.9999 1.55469 13.8408 1.55469 13.6443V3.3556C1.55469 3.15917 1.70877 3 1.89893 3H6.70764C6.8978 3 7.05188 3.15917 7.05188 3.3556V4.35129ZM3.7726 11.3727C3.7726 11.6755 4.01019 11.9209 4.30328 11.9209C4.59638 11.9209 4.83397 11.6755 4.83397 11.3727C4.83397 11.07 4.59638 10.8245 4.30328 10.8245C4.01019 10.8245 3.7726 11.07 3.7726 11.3727Z" fill="#F8F9FA"></path></svg>PC-LINH
+                                        KIỆN
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.82031 8.85714H5.38281C4.41621 8.85714 3.63281 9.62589 3.63281 10.5746V12.2825C3.63281 13.231 4.41621 14 5.38281 14H5.82031C6.30348 14 6.69531 13.6154 6.69531 13.1413V9.71589C6.69531 9.24152 6.30348 8.85714 5.82031 8.85714ZM11.5078 8.85714H11.0703C10.5871 8.85714 10.1953 9.24152 10.1953 9.71589V13.1413C10.1953 13.6154 10.5871 14 11.0703 14H11.5078C12.4744 14 13.2578 13.231 13.2578 12.2825V10.5746C13.2578 9.62616 12.4744 8.85714 11.5078 8.85714ZM8.44531 2C4.5327 2 1.57027 5.19098 1.44531 8.85714V11.8571C1.44531 12.0939 1.64109 12.2857 1.88281 12.2857H2.32031C2.56203 12.2857 2.75781 12.0939 2.75781 11.8571V8.85714C2.75781 5.78562 5.3098 3.29107 8.44531 3.29054C11.5808 3.29107 14.1328 5.78562 14.1328 8.85714V11.8571C14.1328 12.0939 14.3286 12.2857 14.5703 12.2857H15.0078C15.2495 12.2857 15.4453 12.0939 15.4453 11.8571V8.85714C15.3204 5.19098 12.3579 2 8.44531 2Z" fill="#E1E4E6"></path></svg>PHỤ
+                                        KIỆN
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.9184 3.41L13.2718 3.76754L13.6274 3.41218L14.834 2.2065V6.61782L10.4198 6.61782L12.3843 4.65807L12.7384 4.30489L12.3851 3.95091C11.3486 2.91226 9.9232 2.25038 8.33376 2.25038C5.15025 2.25038 2.57275 4.82524 2.57275 8.00022C2.57275 11.1752 5.15024 13.7501 8.33376 13.7501C10.6459 13.7501 12.7284 12.365 13.617 10.2502H14.4222C13.5102 12.7351 11.1304 14.5 8.33421 14.5C6.6118 14.5 4.9552 13.8112 3.73253 12.6015C2.51261 11.3801 1.83398 9.73005 1.83398 8.00022C1.83398 6.2703 2.51222 4.62026 3.7325 3.39893C4.95517 2.1892 6.61179 1.50044 8.33421 1.50044C10.0573 1.50044 11.7121 2.18955 12.9184 3.41Z" fill="#E1E4E6" stroke="#E1E4E6"></path></svg>MÁY
+                                        CŨ GIÁ RẺ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.05552 4.925H3.38879V5.20045C3.38691 5.28762 3.36563 5.37383 3.32587 5.4532C3.28557 5.53363 3.22706 5.60549 3.15364 5.66307L2.71174 6.00965L3.05552 6.35646V6.85H2.88899H2.72246V6.8435H2.22246H2.05592V6.34996L2.39976 6.00309L1.95775 5.65652C1.88481 5.59934 1.82657 5.52805 1.78629 5.44826C1.74674 5.36992 1.72522 5.28484 1.72266 5.1987V4.925H2.05592H2.22246H2.88899H3.05552ZM13.7503 13.6796L13.6943 13.525L13.7503 13.3704C13.7878 13.2669 13.8628 13.1766 13.9653 13.118C14.0679 13.0593 14.19 13.0372 14.3094 13.0572C14.4287 13.0771 14.5344 13.1372 14.609 13.2236C14.6834 13.3096 14.7227 13.4165 14.7227 13.525C14.7227 13.6335 14.6834 13.7404 14.609 13.8264C14.5344 13.9128 14.4287 13.9729 14.3094 13.9928C14.19 14.0128 14.0679 13.9907 13.9653 13.932C13.8628 13.8734 13.7878 13.7831 13.7503 13.6796ZM7.881 7.12159H7.381V7.62159V10.75H5.05532V4.71174L9.55432 2.0793L14.0533 4.71174V10.75H11.741V7.62159V7.12159H11.241H7.881Z" fill="#E1E4E6" stroke="#E1E4E6"></path></svg>HÀNG
+                                        GIA DỤNG
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2545 2.4V2.40021L13.2613 13.6C13.2613 13.6001 13.2613 13.6001 13.2613 13.6002C13.2612 14.1851 12.7979 14.65 12.2432 14.65H3.98633C3.4293 14.65 2.96133 14.1827 2.96133 13.6V5.34313L6.88315 1.35H12.2363C12.7911 1.35 13.2545 1.81502 13.2545 2.4ZM6.04883 13.25H6.39883V12.9V7.3V6.95H6.04883H4.67383H4.32383V7.3V12.9V13.25H4.67383H6.04883ZM8.79883 13.25H9.14883V12.9V7.3V6.95H8.79883H7.42383H7.07383V7.3V12.9V13.25H7.42383H8.79883ZM11.5488 13.25H11.8988V12.9V7.3V6.95H11.5488H10.1738H9.82383V7.3V12.9V13.25H10.1738H11.5488Z" fill="#E1E4E6" stroke="#E1E4E6" stroke-width="0.7"></path></svg>SIM
+                                        & THẺ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pd-6-12">
+                                <div class="text-item">
+                                    <p class="css-znum9s mb-0 uppercase line-clamp-1 hover:text-gray-300">
+                                        <svg width="17" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5299 10.87L20.0099 9.35001C19.7499 9.09 19.5399 8.58001 19.5399 8.22001V6.06C19.5399 5.18 18.8199 4.46 17.9399 4.46H15.7899C15.4299 4.46 14.9199 4.25 14.6599 3.99L13.1399 2.47C12.5199 1.85 11.4999 1.85 10.8799 2.47L9.33988 3.99C9.08988 4.25 8.57988 4.46 8.20988 4.46H6.05988C5.17988 4.46 4.45988 5.18 4.45988 6.06V8.21C4.45988 8.57 4.24988 9.08 3.98988 9.34L2.46988 10.86C1.84988 11.48 1.84988 12.5 2.46988 13.12L3.98988 14.64C4.24988 14.9 4.45988 15.41 4.45988 15.77V17.92C4.45988 18.8 5.17988 19.52 6.05988 19.52H8.20988C8.56988 19.52 9.07988 19.73 9.33988 19.99L10.8599 21.51C11.4799 22.13 12.4999 22.13 13.1199 21.51L14.6399 19.99C14.8999 19.73 15.4099 19.52 15.7699 19.52H17.9199C18.7999 19.52 19.5199 18.8 19.5199 17.92V15.77C19.5199 15.41 19.7299 14.9 19.9899 14.64L21.5099 13.12C22.1599 12.51 22.1599 11.49 21.5299 10.87ZM7.99988 9C7.99988 8.45 8.44988 8 8.99988 8C9.54988 8 9.99988 8.45 9.99988 9C9.99988 9.55 9.55988 10 8.99988 10C8.44988 10 7.99988 9.55 7.99988 9ZM9.52988 15.53C9.37988 15.68 9.18988 15.75 8.99988 15.75C8.80988 15.75 8.61988 15.68 8.46988 15.53C8.17988 15.24 8.17988 14.76 8.46988 14.47L14.4699 8.47001C14.7599 8.18001 15.2399 8.18001 15.5299 8.47001C15.8199 8.76 15.8199 9.24 15.5299 9.53L9.52988 15.53ZM14.9999 16C14.4399 16 13.9899 15.55 13.9899 15C13.9899 14.45 14.4399 14 14.9899 14C15.5399 14 15.9899 14.45 15.9899 15C15.9899 15.55 15.5499 16 14.9999 16Z" fill="currentColor"></path></svg>KHUYẾN
+                                        MÃI
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CONTAINER -->
+                <div class="container-content">
+                    <div class="pb-9">
+                        <div class="lc-container">
+                            <div class="cart-empty">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10.828 12l4.95 4.95l-1.414 1.415L8 12l6.364-6.364l1.414 1.414l-4.95 4.95Z" /></svg>
+                                <a class="text-a" href="#">
+                                    <p>Tiếp tục mua sắm</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="css-li2pdu">
+                            <div class="cart-empty_cart-status cart-empty_txt-center">
+                                <div class=" m-b-16 m-b-sm-12">
+                                    <picture><img alt="img" src="/estore-images/empty-cart.png" width="296" height="180" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></picture>
+                                </div>
+                                <p class="css-8uyn92 text-red-5 px-16 md:px-0">Chưa có sản phẩm nào trong giỏ hàng</p>
+                                <p class="cart-empty_desc">Cùng mua sắm hàng ngàn sản phẩm tại FPTShop nhé!</p>
+                                <div class="cart-status_btn m-b-32 cart-empty_cart-status_btn"><a class="text-a" href="/"><button type="button" class="ant-btn css-10ed4xt ant-btn-primary max-w-[133px] rounded-full md:max-w-none estore-btn estore-btn-bg  css-1krd2ey"><span>Mua hàng</span></button></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main">
+        <div class="footer-bottom">
+            <div>
+                <div class="container-footer">
+                    <div class="">
+                        <div span="1" class="lc-col lc-col-1   css-gyfutq">
+                            <div class="css-a1w0pm">
+                                <ul class="list-links">
+                                    <li class="link-item"><a class="text-a" href="https://frt.vn">Giới thiệu về công ty</a></li>
+                                    <li class="link-item"><a class="text-a" href="ho-tro/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                    <li class="link-item"><a class="text-a" href="/tos">Quy chế hoạt động</a></li>
+                                    <li class="link-item"><a class="text-a" href="http://hddt.fptshop.com.vn/">Kiểm tra hóa đơn điện tử</a></li>
+                                    <li class="link-item"><a class="text-a" href="/kiem-tra-bao-hanh?tab=thong-tin-bao-hanh">Tra cứu thông tin bảo hành</a></li>
+                                    <li class="link-item"><a class="text-a" href="/ho-tro/cau-hoi-thuong-gap">Câu hỏi thường gặp mua hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="css-11qeesg">
+                            <div class="wrapper-social">
+                                <div class="h-10 md:mt-8">
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/"><img alt="social-connect-icon" src="https://fptshop.com.vn/Content/v4/images/ft-img1.png" width="40" height="40" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></a>
+                                </div>
+                                <div class="h-10 md:mt-8">
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/"><img alt="social-connect-icon" src="https://fptshop.com.vn/Content/v4/images/ft-img2.png" width="40" height="40" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div span="1" class="lc-col lc-col-1  cs-col css-gyfutq">
+                            <div class="css-a1w0pm">
+                                <ul class="list-links">
+                                    <li class="link-item"><a class="text-a" href="https://tuyendung.frt.vn/">Tin tuyển dụng</a></li>
+                                    <li class="link-item"><a class="text-a" href="/tin-tuc/Tin-khuyen-mai">Tin khuyến mãi</a></li>
+                                    <li class="link-item"><a class="text-a" href="ho-tro/huong-dan-mua-hang">Hưỡng dẫn mua online</a></li>
+                                    <li class="link-item"><a class="text-a" href="/tra-gop">Hướng dẫn mua trả góp</a></li>
+                                    <li class="link-item"><a class="text-a" href="/ho-tro/chinh-sach-tra-gop">Chính sách trả góp</a></li>
+                                    <li class="link-item"><a class="text-a" href="/ho-tro/chinh-sach-thu-thap-va-xu-ly-du-lieu-ca-nhan">Chính sách thu thập và xử lý dữ liệu cá nhân</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="css-vksq3t">
+                            <h4 class="title">Chứng nhận:</h4>
+                            <div class="wrapper-certicate">
+                                <div class="certification-item max-w-[60px]">
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/">
+                                        <picture>
+                                            <source srcset="https://fptshop.com.vn/Content/v4/images/ft-img3.png" type="image/webp" width="171" height="56">
+                                            <source srcset="/estore-images/fallback-images/default/img-default-3_1.svg" type="image/webp" width="171" height="56">
+                                            <img loading="lazy" decoding="async" alt="certificate-icon" src="/estore-images/fallback-images/error/img-error-3_1.svg">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certification-item max-w-[60px]">
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/">
+                                        <picture>
+                                            <source srcset="https://fptshop.com.vn/Content/v4/images/ft-img4.png" type="image/webp" width="171" height="56">
+                                            <source srcset="/estore-images/fallback-images/default/img-default-3_1.svg" type="image/webp" width="171" height="56">
+                                            <img loading="lazy" decoding="async" alt="certificate-icon" src="/estore-images/fallback-images/error/img-error-3_1.svg">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certification-item max-w-[60px]">
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/">
+                                        <picture>
+                                            <source srcset="https://fptshop.com.vn/Content/v4/images/ft-img5.png" type="image/webp" width="171" height="56">
+                                            <source srcset="/estore-images/fallback-images/default/img-default-3_1.svg" type="image/webp" width="171" height="56">
+                                            <img loading="lazy" decoding="async" alt="certificate-icon" src="/estore-images/fallback-images/error/img-error-3_1.svg">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div span="1" class="lc-col lc-col-1  cs-col css-gyfutq">
+                            <div class="css-a1w0pm">
+                                <ul class="list-links">
+                                    <li class="link-item"><a class="text-a" href="/cua-hang">Hệ thống cửa hàng</a></li>
+                                    <li class="link-item"><a class="text-a" href="/ho-tro/chinh-sach-doi-san-pham">Chính sách đổi trả</a></li>
+                                    <li class="link-item"><a class="text-a" href="/ho-tro/chinh-sach-bao-hanh">Hệ thống bảo hành</a></li>
+                                    <li class="link-item"><a class="text-a" href="/ho-tro/gioi-thieu-may-doi-tra">Giới thiệu máy đổi trả</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="css-1eh151s">
+                            <div class="switchboard-item">
+                                <div class="width-text">
+                                    <p>Tư vấn mua hàng (Miễn phí)</p>
+                                </div>
+                                <a href="tel:1800 6601" class="text-a switchboard-link">1800 6601</a><span> (Nhánh 1)</span>
+                            </div>
+                            <div class="switchboard-item">
+                                <div class="width-text">
+                                    <p>Hỗ trợ kỹ thuật</p>
+                                </div>
+                                <a href="tel:1800 6601" class="text-a switchboard-link">1800 6601</a><span> (Nhánh 2)</span>
+                            </div>
+                            <div class="switchboard-item">
+                                <div class="width-text">
+
+                                    <p>Góp ý, khiếu nại (8h00 - 22h00)</p>
+                                </div>
+                                <a href="tel:1800 6616" class="text-a switchboard-link">1800 6616</a>
+                            </div>
+                            <div class="max-w-[100%] md:max-w-[220px]">
+                                <div class="width-text">
+
+                                    <p class="font-roboto mb-2 text-sm font-medium text-gray-700">Hỗ trợ thanh toán:</p>
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="VISA" src="https://fptshop.com.vn/Content/v4/images/ft-img6.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="Mastercard" src="https://fptshop.com.vn/Content/v4/images/ft-img7.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="jcb" src="https://fptshop.com.vn/Content/v4/images/ft-img8.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="american express" src="https://fptshop.com.vn/Content/v4/images/ft-imgamex.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="atm" src="https://fptshop.com.vn/Content/v4/images/ft-img9.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="moca" src="https://fptshop.com.vn/Content/v4/images/ft-img11.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="zalo pay" src="https://fptshop.com.vn/Content/v4/images/ft-img12.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="vnpay" src="https://fptshop.com.vn/Content/v4/images/ft-img10.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="kredivo" src="https://fptshop.com.vn/Content/v4/images/ft-img15.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="smart" src="https://fptshop.com.vn/Content/v4/images/ft-img13.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="fox" src="https://fptshop.com.vn/Content/v4/images/ft-img14.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                    <div class=" mr-2 mb-2 rounded-[4px]"><img alt="Alepay" src="https://fptshop.com.vn/Content/v4/images/alepay.png" width="44" height="27" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="css-1nm76x8">
+                            <p class="tit font-medium">Website cùng FPT Retail:</p>
+                            <div class="wrapper-social">
+                                <div class="social-item">
+                                    <p>Cửa hàng uỷ quyền bởi Apple:</p>
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/"><img alt="social-connect-icon" src="https://fptshop.com.vn/Content/v4/images/ft-img16.png" width="128" height="28" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></a>
+                                </div>
+                                <div class="social-item">
+                                    <p>Trung tâm bảo hành uỷ quyền Apple:</p>
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/"><img alt="social-connect-icon" src="https://fptshop.com.vn/Content/v4/images/ft-img17.png" width="128" height="28" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></a>
+                                </div>
+                                <div class="social-item">
+                                    <p>Chuỗi nhà thuốc:</p>
+                                    <a class="text-a" href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com.vn/"><img alt="social-connect-icon" src="https://fptshop.com.vn/Content/v4/images/ft-img18.png" width="128" height="28" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="sm:container md:container css-tgtgl2">
+                <div class="css-7mk6ux">
+                    <p>
+                        © 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số FPT / Địa chỉ: 261 - 263 Khánh Hội, P5, Q4, TP. Hồ Chí Minh / GPĐKKD số 0311609355 do Sở KHĐT TP.HCM cấp ngày 08/03/2012. GP số 47/GP-TTĐT do sở TTTT TP HCM cấp ngày 02/07/2018. Điện
+                        thoại: <a target="_blank" rel="nofollow" href="tel:(028) 7302 3456">(028) 7302 3456&amp;</a>. Email: <a target="_blank" rel="nofollow" href="mailto:fptshop@fpt.com">fptshop@fpt.com</a>&nbsp;. Chịu trách nhiệm nội dung: Nguyễn Trịnh
+                        Nhật Linh.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
